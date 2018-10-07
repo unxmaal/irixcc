@@ -1,0 +1,25 @@
+# install basic packages
+- name: install bash
+  pkgng:
+    name: bash,bash-completion
+  environment:  
+    http_proxy: http://10.152.203.27:3128
+    https_proxy: http://10.152.203.27:3128
+- name: install vim
+  pkgng:
+    name: vim
+  environment:
+    http_proxy: http://10.152.203.27:3128
+    https_proxy: http://10.152.203.27:3128
+- name: install wget and curl
+  pkgng:
+    name: wget,curl
+  environment:
+    http_proxy: http://10.152.203.27:3128
+    https_proxy: http://10.152.203.27:3128
+- name: install git
+  pkgng:
+    name: git
+  environment:
+    http_proxy: http://10.152.203.27:3128
+    https_proxy: http://10.152.203.27:3128

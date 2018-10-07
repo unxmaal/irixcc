@@ -1,0 +1,7 @@
+# setup zfs
+- name: new volume called store1 in pool storage    
+  zfs:
+    name: storage/store1
+    state: present
+    extra_zfs_properties:
+      volsize: 50M        

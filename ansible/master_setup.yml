@@ -1,0 +1,11 @@
+---
+
+- name: install pkgs
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+  - import_role:
+      name: base_pkgs
+  - import_role:
+      name: setup_zfs_store    
