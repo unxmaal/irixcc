@@ -6,6 +6,10 @@
   become_user: root
   tasks:
   - import_role:
+      name: fix_resolv
+  - import_role:
+      name: update_pkgs
+  - import_role:
       name: base_pkgs
   - import_role:
       name: setup_zfs_store    
