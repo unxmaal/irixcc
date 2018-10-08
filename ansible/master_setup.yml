@@ -11,5 +11,5 @@
       name: update_pkgs
   - import_role:
       name: base_pkgs
-  - import_role:
-      name: setup_zfs_store    
+#   - import_role:
+#       name: setup_zfs_store    
